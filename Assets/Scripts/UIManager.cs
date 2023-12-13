@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    
+
     public GameObject depositUI;
     public GameObject WithdrawUI;
     public GameObject Button;
     public GameObject DepositExitButton;
     public GameObject WithdrawExitButton;
+    public GameObject NoCash;
+
+   
     public void OnDepositButtonClick()
     {
         depositUI.SetActive(true);
@@ -31,5 +37,10 @@ public class UIManager : MonoBehaviour
     {
         Button.SetActive(true);
         WithdrawUI.SetActive(false);
+    }
+
+    public void OnOkButtonClick()
+    {        
+        NoCash.SetActive(false);
     }
 }
