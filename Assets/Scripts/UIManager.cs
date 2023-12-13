@@ -9,10 +9,11 @@ public class UIManager : MonoBehaviour
 
     public GameObject depositUI;
     public GameObject WithdrawUI;
-    public GameObject Button;
+    public GameObject Button;   
     public GameObject DepositExitButton;
     public GameObject WithdrawExitButton;
     public GameObject NoCash;
+    public GameObject CorrectPlz;
 
    
     public void OnDepositButtonClick()
@@ -42,5 +43,12 @@ public class UIManager : MonoBehaviour
     public void OnOkButtonClick()
     {        
         NoCash.SetActive(false);
+        
     }
+
+    public void OnOkButton2Click()
+    {
+        CorrectPlz.SetActive(false);
+    }
+    
 }
